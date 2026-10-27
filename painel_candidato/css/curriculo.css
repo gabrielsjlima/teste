@@ -1,0 +1,28 @@
+.formcard {
+    max-width: 850px;
+    padding: 25px
+}
+
+.formcard form {
+    display: grid;
+    gap: 17px
+}
+
+.formcard label {
+    display: grid;
+    gap: 7px;
+    font-weight: 600
+}
+
+.formcard input:not([type=checkbox]),
+.formcard textarea {
+    border: 1px solid #d8cbdd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    background: #fff
+}
+
+.formcard .primary {
+    justify-self: start
+}

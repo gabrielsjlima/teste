@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/ajuda.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/candidaturas.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/curriculo.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mensagens.css">
+    <link rel="stylesheet" href="css/preferencias.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/vagas.css">
+    <title>Meu painel | Included Lives</title>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#painel" aria-label="Included Lives, início"><span class="brand-icon">iL</span><b>IVES</b></a>
+        <nav class="topnav">
+            <a href="#vagas" data-view="vagas"><i class="fa-solid fa-briefcase"></i> Vagas</a>
+            <a href="#mensagens" data-view="mensagens"><i class="fa-regular fa-envelope"></i> Mensagens <span class="dot"></span></a>
+        </nav>
+        
+        <button class="account" id="accountBtn">
+            <span class="avatar"><i class="fa-solid fa-user"></i></span><span>Ana Souza</span><i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="account-menu" id="accountMenu" hidden>
+            <button data-view="preferencias">Preferências</button>
+            <button data-view="ajuda">Ajuda</button>
+        </div>
+    </header>
+    
+    <div class="shell">
+        <aside class="sidebar" aria-label="Navegação do candidato">
+            <nav>
+                <button class="side-link active" data-view="painel">
+                    <i class="fa-solid fa-house"></i>
+                    Meu painel
+                </button>
+                
+                <button class="side-link" data-view="curriculo">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Meu currículo
+                </button>
+                
+                <button class="side-link" data-view="candidaturas">
+                    <i class="fa-regular fa-rectangle-list"></i>
+                    Minhas candidaturas
+                </button>
+                
+                <button class="side-link" data-view="salvas">
+                    <i class="fa-regular fa-bookmark"></i> 
+                    Vagas salvas
+                </button>
+                
+                <button class="side-link" data-view="preferencias">
+                    <i class="fa-solid fa-sliders"></i> 
+                    Preferências
+                </button>
+                
+                <button class="side-link" data-view="ajuda">
+                    <i class="fa-regular fa-circle-question"></i> 
+                    Ajuda
+                </button>
+            </nav>
+        </aside>
+
+
+        <main id="main" class="main">
+            <section id="painel" class="view active">
+                <h1>Olá, Ana!</h1>
+                <p class="lead">Acompanhe suas oportunidades e escolha seu próximo passo.</p>
+                
+                <div class="hero-grid">
+                    <article class="card next">
+                        <h2>Meu próximo passo</h2>
+                        
+                        <div class="interview">
+                            <span class="round-icon"><i class="fa-regular fa-calendar-days"></i></span>
+                            
+                            <div>
+                                <h3>Entrevista para Assistente administrativo</h3>
+                                <p>Transportadora Porto Ferreira</p>
+                                <p class="small">
+                                    <i class="fa-solid fa-video accent"></i> 24 de outubro, às 14h <span class="sep">•</span> Online
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="success">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span><b>Comunicação por escrito:</b> solicitação confirmada pela empresa.</span>
+                        </div>
+
+                        <div class="buttons">
+                            <button class="primary" id="orientacoesBtn">Ver orientações</button>
+                            <button class="outline" id="recursoBtn">Solicitar outro recurso</button>
+                        </div>
+                    </article>
+                    
+                    <article class="card profile">
+                        <h2>Seu perfil, do seu jeito</h2>
+                        <p>Revise seu currículo e ajuste suas preferências.</p>
+                        
+                        <button data-view="curriculo">
+                            <i class="fa-regular fa-file-lines"></i> 
+                            Editar currículo 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        
+                        <button data-view="preferencias">
+                            <i class="fa-solid fa-sliders"></i> 
+                            Preferências de leitura 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        
+                        <button data-view="preferencias">
+                            <i class="fa-solid fa-lock"></i> 
+                            Comunicação e privacidade 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </article>
+                </div>
+                
+                <div class="section-title">
+                    <h2>Minhas candidaturas</h2>
+
+                    <button class="text-button" data-view="candidaturas">
+                        Ver todas
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <article class="card applications">
+                    <div class="app-row">
+                        <span class="round-icon mini"><i class="fa-solid fa-briefcase"></i></span>
+                        
+                        <div class="app-name">
+                            <h3>Assistente administrativo</h3>
+                            <p>Transportadora Porto Ferreira</p>
+                        </div>
+                        
+                        <span class="pill green"><i class="fa-solid fa-circle-check"></i> Entrevista agendada</span>
+
+                        <div class="next-step">
+                            <small>Próximo passo</small>
+                            <p>Confira as orientações da entrevista.</p>
+                        </div>
+                        
+                        <button class="outline smallbtn" data-view="candidaturas">
+                            Ver processo <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="app-row">
+                        <span class="round-icon mini"><i class="fa-solid fa-briefcase"></i></span>
+                        
+                        <div class="app-name">
+                            <h3>Atendimento ao cliente</h3>
+                            <p>Conecta Serviços</p>
+                        </div>
+                        
+                        <span class="pill yellow"><i class="fa-regular fa-clock"></i> Em análise</span>
+                        
+                        <div class="next-step">
+                            <small>Próximo passo</small>
+                            <p>Previsão de retorno: ainda não informada.</p>
+                        </div>
+                        
+                        <button class="outline smallbtn" data-view="candidaturas">
+                            Ver processo <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card update">
+                    <span class="round-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                    <div>
+                        <h3>Última atualização</h3>
+                        <p>A empresa confirmou o recurso solicitado para sua entrevista.</p>
+                        <small>Hoje, às 10h</small>
+                    </div>
+                    
+                    <button class="primary" data-view="vagas">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                        Buscar novas vagas
+                    </button>
+                </article>
+            </section>
+
+            <section id="curriculo" class="view">
+                <h1>Meu currículo</h1>
+                <p class="lead">Atualize suas informações profissionais.</p>
+                
+                <div class="card formcard">
+                    <form id="resumeForm">
+                        <label>Nome completo
+                            <input name="nome" value="Ana Souza" required>
+                        </label>
+                        
+                        <label>E-mail
+                            <input name="email" type="email" placeholder="ana@exemplo.com" required>
+                        </label>
+                            
+                        <label>Resumo profissional
+                            <textarea name="resumo" rows="4" placeholder="Conte um pouco sobre suas experiências e habilidades..."></textarea>
+                        </label>
+                        
+                        <label>Formação
+                            <input name="formacao" placeholder="Sua formação">
+                        </label>
+                        
+                        <label>Habilidades
+                            <input name="habilidades" placeholder="Ex.: atendimento, informática, organização">
+                        </label>
+                            
+                        <button class="primary" type="submit">Salvar currículo</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="candidaturas" class="view">
+                <h1>Minhas candidaturas</h1>
+                <p class="lead">Acompanhe cada etapa dos processos seletivos.</p>
+                
+                <div class="card listcard">
+                    <h3>Assistente administrativo</h3>
+                    <p>Transportadora Porto Ferreira</p>
+                    <span class="pill green">Entrevista agendada</span>
+                    <p class="detail">Entrevista online — 24 de outubro, às 14h. Comunicação por escrito confirmada.</p>
+                </div>
+
+                <div class="card listcard">
+                    <h3>Atendimento ao cliente</h3>
+                    <p>Conecta Serviços</p>
+                    <span class="pill yellow">Em análise</span>
+                    <p class="detail">A empresa ainda não informou uma previsão de retorno.</p>
+                </div>
+            </section>
+
+            <section id="salvas" class="view">
+                <h1>Vagas salvas</h1>
+                <p class="lead">Oportunidades para consultar mais tarde.</p>
+
+                <div class="card listcard">
+                    <p>Você ainda não salvou nenhuma vaga neste painel demonstrativo.</p>
+                    <button class="primary" data-view="vagas">Buscar vagas</button>
+                </div>
+            </section>
+
+            <section id="preferencias" class="view">
+                <h1>Preferências</h1>
+                <p class="lead">Personalize sua experiência de navegação.</p>
+
+                <div class="card formcard">
+                    <label class="toggle">
+                        <input type="checkbox" id="largeText"> Aumentar tamanho do texto
+                    </label>
+                    
+                    <label class="toggle">
+                        <input type="checkbox" id="contrast"> Alto contraste
+                    </label>
+                    
+                    <label class="toggle">
+                        <input type="checkbox" id="reduceMotion"> Reduzir animações
+                    </label>
+                    
+                    <label class="toggle">
+                        <input type="checkbox" id="written"> Prefiro comunicação por escrito
+                    </label>
+
+                    <p class="muted">As preferências são guardadas apenas neste navegador.</p>
+                </div>
+            </section>
+
+            <section id="ajuda" class="view">
+                <h1>Ajuda</h1>
+                <p class="lead">Encontre respostas para dúvidas frequentes.</p>
+                
+                <div class="card formcard">
+                    <details>
+                        <summary>Como acompanho uma candidatura?</summary>
+                        <p>Abra “Minhas candidaturas” para consultar o status demonstrativo de cada processo.</p>
+                    </details>
+                    <details>
+                        <summary>Como solicitar um recurso de acessibilidade?</summary>
+                        <p>Use “Solicitar outro recurso” na visão geral para registrar sua solicitação localmente.</p>
+                    </details>
+                    <details>
+                        <summary>Como edito meu currículo?</summary>
+                        <p>Abra “Meu currículo”, preencha os campos e clique em “Salvar currículo”.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section id="vagas" class="view">
+                <h1>Buscar vagas</h1>
+                <p class="lead">Encontre uma oportunidade para você.</p>
+                <div class="card formcard">
+                    <label>Pesquisar vaga
+                        <input id="jobSearch" placeholder="Cargo ou empresa">
+                    </label>
+                    
+                    <div id="jobResults"></div>
+                </div>
+            </section>
+            
+            <section id="mensagens" class="view">
+                <h1>Mensagens</h1>
+                <p class="lead">Suas conversas com empresas.</p>
+                
+                <div class="card listcard">
+                    <h3>Transportadora Porto Ferreira</h3>
+                    <p>Seu recurso de comunicação por escrito foi confirmado para a entrevista.</p>
+                    <small>Mensagem demonstrativa</small>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <dialog id="dialog">
+        <form method="dialog"><button class="close" aria-label="Fechar">×</button>
+            <h2 id="dialogTitle"></h2>
+            <div id="dialogBody"></div>
+            <div class="buttons">
+                <button class="primary" value="close">Entendi</button>
+            </div>
+        </form>
+    </dialog>
+    
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="js/painel.js"></script>
+</body>
+
+</html>

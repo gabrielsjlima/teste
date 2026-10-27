@@ -1,0 +1,105 @@
+.topbar {
+    height: var(--header);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e9dcec;
+    position: relative;
+    z-index: 3;
+    padding: 0 32px;
+    gap: 35px
+}
+
+.brand {
+    width: 236px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #090909;
+    font-size: 30px;
+    letter-spacing: -1px;
+    gap: 7px;
+    font-weight: 800
+}
+
+.brand-icon {
+    background: linear-gradient(145deg, #9e25a8, #74117f);
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: -3px;
+    padding: 5px 9px 5px 5px;
+    border-radius: 9px
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 45px
+}
+
+.topnav a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative
+}
+
+.topnav i {
+    color: var(--purple);
+    font-size: 21px;
+    margin-right: 12px
+}
+
+.dot {
+    display: inline-block;
+    background: #a200aa;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    vertical-align: top
+}
+
+.account {
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--ink)
+}
+
+.account .fa-chevron-down {
+    font-size: 12px
+}
+
+.avatar {
+    background: #f2dcf9;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    display: grid;
+    place-items: center;
+    color: #87068d;
+    font-size: 22px
+}
+
+.account-menu {
+    position: absolute;
+    right: 25px;
+    top: 65px;
+    background: white;
+    box-shadow: 0 8px 24px #34023d20;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px
+}
+
+.account-menu button {
+    display: block;
+    border: 0;
+    background: transparent;
+    padding: 12px 25px;
+    width: 100%;
+    text-align: left
+}

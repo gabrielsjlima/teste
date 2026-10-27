@@ -1,0 +1,13 @@
+details {
+    padding: 15px;
+    border-bottom: 1px solid var(--line)
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600
+}
+
+details p {
+    padding: 12px 0
+}
