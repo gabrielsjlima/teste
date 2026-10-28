@@ -1,0 +1,146 @@
+/* PAINEL — HEADER */
+
+.topbar {
+    height: var(--header);
+    position: fixed;
+    z-index: 10;
+    inset: 0 0 auto;
+    background: #fff9ff;
+    border-bottom: 1px solid #e8dceb;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    gap: 30px;
+    box-shadow: 0 1px 4px #4b23500b
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    width: 242px;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #080808
+}
+
+.brand img {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    object-position: 23% 50%;
+    border-radius: 10px
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: -1px
+}
+
+.company-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-left: 1px solid #e9ddec;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap
+}
+
+.company-label i {
+    color: var(--purple);
+    font-size: 23px
+}
+
+.top-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 28px
+}
+
+.top-message {
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    font-size: 14px
+}
+
+.top-message i {
+    font-size: 23px;
+    color: var(--purple)
+}
+
+.notification-dot {
+    width: 9px;
+    height: 9px;
+    background: #a50087;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 22px
+}
+
+.account {
+    border-left: 1px solid var(--line);
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #aaa2e7;
+    color: #272347;
+    display: grid;
+    place-items: center;
+    font-size: 14px
+}
+
+.account>button {
+    background: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap
+}
+
+.account-menu {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    background: white;
+    box-shadow: 0 8px 26px #54215925;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    min-width: 180px;
+    padding: 8px
+}
+
+.account-menu[hidden] {
+    display: none
+}
+
+.account-menu button {
+    display: block;
+    background: none;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    border-radius: 7px
+}
+
+.account-menu button:hover {
+    background: var(--pale)
+}

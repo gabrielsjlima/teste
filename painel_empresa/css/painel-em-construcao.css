@@ -1,0 +1,59 @@
+/* PAINEL — EM CONSTRUCAO */
+
+.construction {
+    min-height: calc(100dvh - var(--header) - 60px);
+    display: grid;
+    place-items: center
+}
+
+.construction[hidden],
+.overview[hidden] {
+    display: none
+}
+
+.construction-card {
+    width: min(100%, 600px);
+    text-align: center;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 56px 32px;
+    box-shadow: 0 8px 35px #69277314
+}
+
+.construction-icon {
+    width: 94px;
+    height: 94px;
+    margin: 0 auto 22px;
+    background: #f4def8;
+    color: #84138b;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 38px
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #a268a6;
+    font-weight: 800
+}
+
+.construction-card h1 {
+    font-size: clamp(30px, 4vw, 45px);
+    color: #7d1288;
+    margin: 10px 0
+}
+
+.construction-card>p:not(.eyebrow) {
+    color: #586075;
+    line-height: 1.6;
+    margin-bottom: 27px
+}
+
+.construction-card .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px
+}

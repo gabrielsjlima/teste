@@ -1,0 +1,221 @@
+/* PAINEL — RESPONSIVO */
+
+@media(max-width:1100px) {
+    :root {
+        --sidebar: 245px
+    }
+
+    .brand {
+        width: 190px
+    }
+
+    .topbar {
+        padding: 0 20px
+    }
+
+    .company-label {
+        padding-left: 15px
+    }
+
+    .main {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    .middle-grid {
+        grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr)
+    }
+
+    .btn-small {
+        min-width: 125px
+    }
+
+    .stat-card {
+        padding: 15px;
+        gap: 12px
+    }
+}
+
+@media(max-width:780px) {
+    :root {
+        --header: 68px;
+        --sidebar: 0px
+    }
+
+    .topbar {
+        gap: 10px;
+        padding: 0 14px
+    }
+
+    .brand {
+        width: auto
+    }
+
+    .brand img {
+        height: 39px;
+        width: 39px
+    }
+
+    .brand-name {
+        font-size: 21px
+    }
+
+    .company-label {
+        display: none
+    }
+
+    .top-actions {
+        gap: 8px
+    }
+
+    .account {
+        padding-left: 10px
+    }
+
+    .account>button {
+        font-size: 0;
+        gap: 4px
+    }
+
+    .account>button i {
+        font-size: 12px
+    }
+
+    .avatar {
+        width: 36px;
+        height: 36px
+    }
+
+    .top-message span {
+        display: none
+    }
+
+    .sidebar {
+        position: sticky;
+        top: var(--header);
+        z-index: 9;
+        width: 100%;
+        height: auto;
+        padding: 8px 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        background: #fff9ff
+    }
+
+    .sidebar nav {
+        display: flex;
+        min-width: max-content;
+        gap: 4px
+    }
+
+    .nav-link {
+        width: auto;
+        white-space: nowrap;
+        padding: 10px 12px;
+        gap: 8px;
+        font-size: 13px
+    }
+
+    .nav-link i {
+        font-size: 17px;
+        width: auto
+    }
+
+    .main {
+        margin: 0;
+        padding: 24px 16px
+    }
+
+    .stats {
+        gap: 10px
+    }
+
+    .stat-card {
+        min-height: 100px
+    }
+
+    .stat-card strong {
+        font-size: 27px
+    }
+
+    .stat-card p {
+        font-size: 12px
+    }
+
+    .circle-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 20px
+    }
+
+    .middle-grid {
+        grid-template-columns: 1fr
+    }
+
+    .guidance {
+        min-height: 200px
+    }
+
+    .guide-illustration {
+        display: none
+    }
+
+    .guidance .text-link {
+        margin-top: 18px
+    }
+
+    .page-heading h1 {
+        font-size: 27px
+    }
+
+    .page-heading p {
+        font-size: 15px
+    }
+}
+
+@media(max-width:540px) {
+    .page-heading {
+        flex-direction: column
+    }
+
+    .publish {
+        width: 100%
+    }
+
+    .stats {
+        grid-template-columns: 1fr
+    }
+
+    .stat-card {
+        min-height: 78px
+    }
+
+    .middle-grid {
+        gap: 12px
+    }
+
+    .attention-row {
+        flex-wrap: wrap;
+        gap: 12px
+    }
+
+    .attention-row .btn-small {
+        width: 100%
+    }
+
+    .panel {
+        padding: 16px
+    }
+
+    .panel h2 {
+        font-size: 20px
+    }
+
+    .construction-card {
+        padding: 35px 18px
+    }
+
+    .desktop-only {
+        display: none
+    }
+}

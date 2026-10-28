@@ -1,0 +1,36 @@
+/* MODULOS — RESPONSIVO */
+
+@media(max-width:950px) {
+    .ws-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .ws-split {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:640px) {
+
+    .ws-grid,
+    .ws-grid.two {
+        grid-template-columns: 1fr
+    }
+
+    .ws-head {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .ws-card {
+        padding: 15px
+    }
+
+    .ws-table {
+        min-width: 570px
+    }
+
+    .ws-actions .ws-btn {
+        white-space: normal
+    }
+}

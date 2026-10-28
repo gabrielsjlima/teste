@@ -1,0 +1,36 @@
+/* MODULOS — TABELAS */
+
+.ws-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left
+}
+
+.ws-table th {
+    background: #f7f2fa;
+    font-size: .85rem
+}
+
+.ws-table th,
+.ws-table td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #eee6f0
+}
+
+.ws-table td {
+    font-size: .91rem
+}
+
+.ws-table tr:last-child td {
+    border-bottom: 0
+}
+
+.ws-table-wrap {
+    overflow: auto
+}
+
+.ws-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap
+}

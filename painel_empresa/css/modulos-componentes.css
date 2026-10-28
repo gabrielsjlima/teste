@@ -1,0 +1,179 @@
+/* MODULOS — COMPONENTES */
+
+.ws-btn {
+    border: 1px solid #92279f;
+    color: #7d198c;
+    background: white;
+    border-radius: 9px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: 700;
+    font: inherit;
+    white-space: nowrap
+}
+
+.ws-btn.primary {
+    background: linear-gradient(110deg, #7a198c, #aa32b0);
+    color: white
+}
+
+.ws-btn:hover {
+    filter: brightness(.95)
+}
+
+.ws-btn:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.ws-pill {
+    display: inline-flex;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: .79rem;
+    font-weight: 700;
+    background: #f3e4f5;
+    color: #7e1b8e
+}
+
+.ws-pill.ok {
+    background: #e0f8e9;
+    color: #126b39
+}
+
+.ws-pill.warn {
+    background: #fff1d5;
+    color: #85510b
+}
+
+.ws-muted {
+    color: #6d6b79;
+    font-size: .88rem
+}
+
+.ws-stat {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.ws-stat i {
+    font-size: 1.4rem;
+    color: #8a239c;
+    background: #f5e6fa;
+    border-radius: 50%;
+    padding: 16px
+}
+
+.ws-stat strong {
+    font-size: 1.5rem;
+    color: #71137f
+}
+
+.ws-empty {
+    text-align: center;
+    padding: 45px 20px;
+    color: #686075
+}
+
+.ws-empty i {
+    font-size: 2rem;
+    color: #8b229d;
+    display: block;
+    margin-bottom: 15px
+}
+
+.ws-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #e5d8e9;
+    margin-bottom: 18px;
+    flex-wrap: wrap
+}
+
+.ws-tab {
+    border: 0;
+    background: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: #5c5262;
+    font: inherit
+}
+
+.ws-tab.active {
+    color: #7b1589;
+    border-bottom: 3px solid #90219d;
+    font-weight: 700
+}
+
+.ws-notice {
+    background: #f7ecfa;
+    border-radius: 10px;
+    padding: 15px;
+    color: #571166
+}
+
+.ws-guide {
+    display: flex;
+    gap: 14px;
+    align-items: start
+}
+
+.ws-guide i {
+    font-size: 1.4rem;
+    color: #8e219f
+}
+
+.ws-guide p {
+    margin: 5px 0 0
+}
+
+.ws-list {
+    display: grid;
+    gap: 12px
+}
+
+.ws-small {
+    font-size: .84rem
+}
+
+.ws-feedback {
+    color: #1c6a3c;
+    font-weight: 600
+}
+
+.ws-danger {
+    color: #9d2340
+}
+
+.ws-chip {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f6edf9;
+    border-radius: 20px;
+    margin: 3px
+}
+
+.ws-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap
+}
+
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #371141;
+    color: white;
+    border-radius: 10px;
+    padding: 13px 20px;
+    box-shadow: 0 8px 28px #0002;
+    z-index: 200;
+    display: none
+}
+
+#toast.visible {
+    display: block
+}

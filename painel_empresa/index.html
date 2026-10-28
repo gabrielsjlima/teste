@@ -7,35 +7,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="css/painel-empresa.css">
-  <link rel="stylesheet" href="css/modulos.css">
+  <link rel="stylesheet" href="css/modulos-componentes.css">
+  <link rel="stylesheet" href="css/modulos-estrutura.css">
+  <link rel="stylesheet" href="css/modulos-formularios.css">
+  <link rel="stylesheet" href="css/modulos-responsivo.css">
+  <link rel="stylesheet" href="css/modulos-tabelas.css">
+  <link rel="stylesheet" href="css/painel-base.css">
+  <link rel="stylesheet" href="css/painel-em-construcao.css">
+  <link rel="stylesheet" href="css/painel-header.css">
+  <link rel="stylesheet" href="css/painel-responsivo.css">
+  <link rel="stylesheet" href="css/painel-sidebar.css">
+  <link rel="stylesheet" href="css/painel-tabela-vagas.css">
+  <link rel="stylesheet" href="css/painel-visao-geral.css">
   <script src="js/painel-empresa.js" defer></script>
   <title>Painel da empresa | Included Lives</title>
 </head>
 <body>
   <div class="app">
+    <!-- Cabeçalho -->
     <header class="topbar">
+      <!-- Logo -->
       <a class="brand" href="#visao-geral" aria-label="Included Lives, visão geral">
         <img src="assets/logo.png"alt="iLives"><span class="brand-name">IVES</span>
       </a>
       
+      <!-- Nome da empresa no cabeçalho -->
       <div class="company-label">
         <i class="fa-regular fa-building"></i>
         <span>Transportadora Porto Ferreira</span>
       </div>
 
+      <!-- Mensagens -->
       <div class="top-actions">
         <button class="top-message" data-page="mensagens">
           <i class="fa-regular fa-comment-dots"></i><span>Mensagens</span><b class="notification-dot"></b>
         </button>
         
+        <!-- Perfil da Empresa -->
         <div class="account">
+          <!-- Avatar -->
           <span class="avatar">TP</span>
           <button id="accountButton" aria-expanded="false" aria-controls="accountMenu">
             Minha conta 
             <i class="fa-solid fa-chevron-down"></i>
           </button>
           
+          <!-- Opções ao clicar no perfil -->
           <div id="accountMenu" class="account-menu" hidden>
             <button data-page="perfil">Perfil da empresa</button>
             <button data-page="ajuda">Ajuda</button>
@@ -44,6 +61,7 @@
       </div>
     </header>
     
+    <!-- Navegação / Menu Lateral -->
     <aside class="sidebar" aria-label="Menu da empresa">
       <nav id="sideNav">
         <button class="nav-link active" data-page="visao-geral">
@@ -78,21 +96,26 @@
       </nav>
     </aside>
 
+    <!-- Seção 1 / Painel -->
     <main class="main" id="mainContent">
       <section id="overview" class="page overview" aria-labelledby="pageTitle">
         <div class="page-heading">
+          <!-- Titulo Painel -->
           <div>
             <h1 id="pageTitle">Vamos dar o próximo passo na inclusão?</h1>
             <p>Organize suas vagas e acompanhe o que precisa da sua atenção.</p>
           </div>
           
+          <!-- Botão para criar vaga de emprego -->
           <button class="btn btn-primary publish" data-page="vagas">
             <i class="fa-solid fa-plus"></i> 
             Publicar vaga
           </button>
         </div>
 
+        <!-- Cards de status das vagas -->
         <div class="stats">
+          <!-- Vagas ativas -->
           <article class="stat-card">
             <span class="circle-icon"><i class="fa-regular fa-file-lines"></i></span>
 
@@ -102,6 +125,7 @@
             </div>
           </article>
 
+          <!-- Candidaturas aguardando resposta -->
           <article class="stat-card">
             <span class="circle-icon"><i class="fa-solid fa-users"></i></span>
             
@@ -111,6 +135,7 @@
             </div>
           </article>
 
+          <!-- Entrevistas agendadadas -->
           <article class="stat-card">
             <span class="circle-icon"><i class="fa-regular fa-calendar"></i></span>
             
@@ -121,36 +146,78 @@
           </article>
         </div>
         
+        <!-- Card Principal -->
         <div class="middle-grid">
           <section class="panel attention">
+            <!-- Titulo -->
             <h2>Precisa da sua atenção</h2>
-            <div class="attention-row"><span class="circle-icon small"><i class="fa-regular fa-envelope"></i></span>
-              <div class="attention-text"><strong>Responder 8 candidaturas</strong>
+
+            <!-- Linha 1 -->
+            <div class="attention-row">
+              <span class="circle-icon small"><i class="fa-regular fa-envelope"></i></span>
+
+              <!-- Descrição -->
+              <div class="attention-text">
+                <strong>Responder 8 candidaturas</strong>
                 <p>Há candidaturas sem atualização há 5 dias</p>
-              </div><button class="btn btn-primary btn-small" data-page="candidaturas">Ver candidaturas</button>
+              </div>
+              
+              <button class="btn btn-primary btn-small" data-page="candidaturas">Ver candidaturas</button>
             </div>
-            <div class="attention-row"><span class="circle-icon small"><i class="fa-regular fa-comment"></i></span>
-              <div class="attention-text"><strong>Confirmar recurso para entrevista</strong>
+
+            <!-- Linha 2-->
+            <div class="attention-row">
+              <span class="circle-icon small"><i class="fa-regular fa-comment"></i></span>
+
+              <!-- Descrição -->
+              <div class="attention-text">
+                <strong>Confirmar recurso para entrevista</strong>
                 <p>1 solicitação de comunicação por escrito</p>
-              </div><button class="btn btn-primary btn-small" data-page="candidaturas">Analisar solicitação</button>
+              </div>
+              
+              <button class="btn btn-primary btn-small" data-page="candidaturas">Analisar solicitação</button>
             </div>
-            <div class="attention-row"><span class="circle-icon small"><i
-                  class="fa-solid fa-universal-access"></i></span>
-              <div class="attention-text"><strong>Completar acessibilidade de uma vaga</strong>
+
+            <!-- Linha 3 -->
+            <div class="attention-row">
+              <span class="circle-icon small"><i class="fa-solid fa-universal-access"></i></span>
+
+              <!-- Descrição -->
+              <div class="attention-text">
+                <strong>Completar acessibilidade de uma vaga</strong>
                 <p>Assistente de logística: recursos ainda não informados</p>
-              </div><button class="btn btn-primary btn-small" data-page="vagas">Revisar vaga</button>
+              </div>
+              
+              <button class="btn btn-primary btn-small" data-page="vagas">Revisar vaga</button>
             </div>
           </section>
-          <aside class="panel guidance"><span class="circle-icon"><i class="fa-solid fa-book-open"></i></span>
+
+          <!-- Card 2 -->
+          <aside class="panel guidance">
+            <span class="circle-icon"><i class="fa-solid fa-book-open"></i></span>
+            
+            <!-- Titulo -->
             <h2>Contrate com mais informação</h2>
             <p>Orientações para entrevistas e processos acessíveis.</p>
-            <div class="guide-illustration" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i><span></span>
-            </div><button class="text-link" data-page="orientacoes">Acessar boas práticas <i
-                class="fa-solid fa-arrow-right"></i></button>
+            
+            <!-- Icone da lista de check -->
+            <div class="guide-illustration" aria-hidden="true">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            
+            <!-- Botão que te joga para a aba de boas práticas -->
+            <button class="text-link" data-page="orientacoes">
+              Acessar boas práticas<i class="fa-solid fa-arrow-right"></i>
+            </button>
           </aside>
         </div>
+
+        <!-- Card 3 -->
         <section class="panel jobs">
+          <!-- Titulo -->
           <h2>Suas vagas</h2>
+          
+          <!-- Tabela -->
           <div class="table-wrap">
             <table>
               <thead>
@@ -161,31 +228,45 @@
                   <th colspan="2">Próxima ação</th>
                 </tr>
               </thead>
+
               <tbody>
+                <!-- Vaga 1 -->
                 <tr>
                   <td>Assistente administrativo</td>
                   <td><span class="status published"><i class="fa-solid fa-circle"></i> Publicada</span></td>
                   <td>15</td>
                   <td><button class="btn btn-outline" data-page="vagas">Gerenciar</button></td>
-                  <td><button class="dots" data-page="vagas"
-                      aria-label="Mais opções da vaga Assistente administrativo"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                  <td>
+                    <button class="dots" data-page="vagas" aria-label="Mais opções da vaga Assistente administrativo">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </td>
                 </tr>
+
+                <!-- Vaga 2 -->
                 <tr>
                   <td>Auxiliar de expedição</td>
                   <td><span class="status published"><i class="fa-solid fa-circle"></i> Publicada</span></td>
                   <td>8</td>
                   <td><button class="btn btn-outline" data-page="vagas">Gerenciar</button></td>
-                  <td><button class="dots" data-page="vagas" aria-label="Mais opções da vaga Auxiliar de expedição"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                  <td>
+                    <button class="dots" data-page="vagas" aria-label="Mais opções da vaga Auxiliar de expedição">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </td>
                 </tr>
+
+                <!-- Vaga 3 -->
                 <tr>
                   <td>Assistente de logística</td>
                   <td><span class="status draft"><i class="fa-solid fa-circle"></i> Rascunho</span></td>
                   <td>—</td>
                   <td><button class="btn btn-outline" data-page="vagas">Continuar edição</button></td>
-                  <td><button class="dots" data-page="vagas" aria-label="Mais opções da vaga Assistente de logística"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                  <td>
+                    <button class="dots" data-page="vagas" aria-label="Mais opções da vaga Assistente de logística">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>

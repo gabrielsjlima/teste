@@ -1,0 +1,77 @@
+/* MODULOS — FORMULARIOS */
+
+.ws-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-weight: 600;
+    color: #28243a;
+    font-size: .92rem
+}
+
+.ws-card input:not([type=checkbox]),
+.ws-card textarea,
+.ws-card select,
+.ws-tools input,
+.ws-tools select {
+    border: 1px solid #d9cfdd;
+    border-radius: 9px;
+    padding: 11px 12px;
+    background: white;
+    color: #21182f;
+    width: 100%;
+    font: inherit;
+    min-width: 0
+}
+
+.ws-card textarea {
+    resize: vertical;
+    min-height: 100px
+}
+
+.ws-card input:focus,
+.ws-card select:focus,
+.ws-card textarea:focus,
+.ws-tools input:focus {
+    outline: 2px solid #ae5ac3;
+    outline-offset: 1px
+}
+
+.ws-tools {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+    flex-wrap: wrap
+}
+
+.ws-tools input {
+    flex: 1 1 220px
+}
+
+.ws-tools select {
+    flex: 0 1 220px
+}
+
+.ws-check {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 9px !important;
+    font-weight: 500 !important
+}
+
+.ws-check input {
+    accent-color: #8a1e99
+}
+
+.ws-fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+.ws-fieldset legend {
+    font-weight: 700;
+    margin-bottom: 10px
+}

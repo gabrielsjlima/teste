@@ -1,0 +1,60 @@
+/* MODULOS — ESTRUTURA */
+
+.workspace {
+    padding: 0 0 30px;
+    max-width: 1250px
+}
+
+.workspace h1 {
+    font-size: clamp(1.6rem, 2.3vw, 2.3rem);
+    color: #6e137e;
+    margin: 0 0 8px
+}
+
+.workspace h2 {
+    color: #70147d;
+    font-size: 1.2rem;
+    margin: 0 0 15px
+}
+
+.workspace p {
+    line-height: 1.5
+}
+
+.ws-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px
+}
+
+.ws-sub {
+    color: #5d6070;
+    margin: 0
+}
+
+.ws-card {
+    background: white;
+    border: 1px solid #eaddec;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 9px #5a16600b;
+    margin-bottom: 16px
+}
+
+.ws-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px
+}
+
+.ws-grid.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.ws-split {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 16px
+}
