@@ -10,31 +10,16 @@
     gap: 35px
 }
 
-.brand {
-    width: 236px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #090909;
-    font-size: 30px;
-    letter-spacing: -1px;
-    gap: 7px;
-    font-weight: 800
-}
-
-.brand-icon {
-    background: linear-gradient(145deg, #9e25a8, #74117f);
-    color: #fff;
-    font-size: 26px;
-    letter-spacing: -3px;
-    padding: 5px 9px 5px 5px;
-    border-radius: 9px
+header img {
+    width: 100px;
+    height: 100px;
 }
 
 .topnav {
     display: flex;
     align-items: center;
-    gap: 45px
+    margin-left: 120px;
+    gap: 45px;
 }
 
 .topnav a {

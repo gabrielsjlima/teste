@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/painel.css">
-    <link rel="stylesheet" href="css/ajuda.css">
+    <link rel="stylesheet" href="css/nav-lateral.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/candidaturas.css">
     <link rel="stylesheet" href="css/componentes.css">
-    <link rel="stylesheet" href="css/curriculo.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/mensagens.css">
-    <link rel="stylesheet" href="css/preferencias.css">
     <link rel="stylesheet" href="css/responsivo.css">
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/vagas.css">
     <title>Meu painel | Included Lives</title>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header class="topbar">
-        <a class="brand" href="#painel" aria-label="Included Lives, início"><span class="brand-icon">iL</span><b>IVES</b></a>
+        <!-- Logo -->
+        <img src="assets/logo.png" alt="logo da Included Lives">
+
+        <!-- Navegação das vagas e mensagens -->
         <nav class="topnav">
             <a href="#vagas" data-view="vagas"><i class="fa-solid fa-briefcase"></i> Vagas</a>
             <a href="#mensagens" data-view="mensagens"><i class="fa-regular fa-envelope"></i> Mensagens <span class="dot"></span></a>
         </nav>
-        
+
+        <!-- Perfil do candidato -->
         <button class="account" id="accountBtn">
             <span class="avatar"><i class="fa-solid fa-user"></i></span><span>Ana Souza</span><i class="fa-solid fa-chevron-down"></i>
         </button>
 
+        <!-- Opções do Perfil -->
         <div class="account-menu" id="accountMenu" hidden>
             <button data-view="preferencias">Preferências</button>
             <button data-view="ajuda">Ajuda</button>
         </div>
     </header>
     
+
     <div class="shell">
+        <!-- Navegação lateral -->
         <aside class="sidebar" aria-label="Navegação do candidato">
             <nav>
                 <button class="side-link active" data-view="painel">
@@ -72,19 +74,24 @@
             </nav>
         </aside>
 
-
+        <!-- Corpo do site -->
         <main id="main" class="main">
+
+            <!-- Seção do painel -->
             <section id="painel" class="view active">
+                <!-- Titulo da página -->
                 <h1>Olá, Ana!</h1>
                 <p class="lead">Acompanhe suas oportunidades e escolha seu próximo passo.</p>
                 
                 <div class="hero-grid">
+                    <!-- Card 1 -->
                     <article class="card next">
+                        <!-- Titulo -->
                         <h2>Meu próximo passo</h2>
                         
+                        <!-- Informações -->
                         <div class="interview">
                             <span class="round-icon"><i class="fa-regular fa-calendar-days"></i></span>
-                            
                             <div>
                                 <h3>Entrevista para Assistente administrativo</h3>
                                 <p>Transportadora Porto Ferreira</p>
@@ -94,21 +101,26 @@
                             </div>
                         </div>
                         
+                        <!-- Confirmação da empresa-->
                         <div class="success">
                             <i class="fa-solid fa-circle-check"></i>
                             <span><b>Comunicação por escrito:</b> solicitação confirmada pela empresa.</span>
                         </div>
 
+                        <!-- Botões -->
                         <div class="buttons">
                             <button class="primary" id="orientacoesBtn">Ver orientações</button>
                             <button class="outline" id="recursoBtn">Solicitar outro recurso</button>
                         </div>
                     </article>
-                    
+
+                    <!-- Card 2 -->
                     <article class="card profile">
+                        <!-- Titulo -->
                         <h2>Seu perfil, do seu jeito</h2>
                         <p>Revise seu currículo e ajuste suas preferências.</p>
                         
+                        <!-- Botões -->
                         <button data-view="curriculo">
                             <i class="fa-regular fa-file-lines"></i> 
                             Editar currículo 
@@ -129,6 +141,7 @@
                     </article>
                 </div>
                 
+                <!-- Card 3-->
                 <div class="section-title">
                     <h2>Minhas candidaturas</h2>
 
@@ -137,16 +150,20 @@
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
-                
+
+                <!-- Informações das candidaturas -->
                 <article class="card applications">
+                    <!-- Candidatura 1 -->
                     <div class="app-row">
                         <span class="round-icon mini"><i class="fa-solid fa-briefcase"></i></span>
                         
+                        <!-- Nome da vaga e da empresa -->
                         <div class="app-name">
                             <h3>Assistente administrativo</h3>
                             <p>Transportadora Porto Ferreira</p>
                         </div>
                         
+                        <!-- Icone da situação da vaga -->
                         <span class="pill green"><i class="fa-solid fa-circle-check"></i> Entrevista agendada</span>
 
                         <div class="next-step">
@@ -154,19 +171,23 @@
                             <p>Confira as orientações da entrevista.</p>
                         </div>
                         
+                        <!-- Botão que te joga para candidaturas-->
                         <button class="outline smallbtn" data-view="candidaturas">
                             Ver processo <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
 
+                    <!-- Candidatura 2 -->
                     <div class="app-row">
                         <span class="round-icon mini"><i class="fa-solid fa-briefcase"></i></span>
                         
+                        <!-- Nome da vaga e da empresa -->
                         <div class="app-name">
                             <h3>Atendimento ao cliente</h3>
                             <p>Conecta Serviços</p>
                         </div>
-                        
+
+                        <!-- Icone da situação da vaga -->
                         <span class="pill yellow"><i class="fa-regular fa-clock"></i> Em análise</span>
                         
                         <div class="next-step">
@@ -174,20 +195,24 @@
                             <p>Previsão de retorno: ainda não informada.</p>
                         </div>
                         
+                        <!-- Botão que te joga para candidaturas-->
                         <button class="outline smallbtn" data-view="candidaturas">
                             Ver processo <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
                 </article>
 
+                <!-- Card 4 -->
                 <article class="card update">
                     <span class="round-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                    <!-- Atualizações -->
                     <div>
                         <h3>Última atualização</h3>
                         <p>A empresa confirmou o recurso solicitado para sua entrevista.</p>
                         <small>Hoje, às 10h</small>
                     </div>
                     
+                    <!-- Botão que joga para a aba de novas vagas -->
                     <button class="primary" data-view="vagas">
                         <i class="fa-solid fa-magnifying-glass"></i> 
                         Buscar novas vagas
@@ -195,10 +220,13 @@
                 </article>
             </section>
 
+            <!-- Seção do curriculo -->
             <section id="curriculo" class="view">
+                <!-- Titulo -->
                 <h1>Meu currículo</h1>
                 <p class="lead">Atualize suas informações profissionais.</p>
                 
+                <!-- Formulário -->
                 <div class="card formcard">
                     <form id="resumeForm">
                         <label>Nome completo
@@ -226,10 +254,13 @@
                 </div>
             </section>
 
+            <!-- Seção de candidaturas -->
             <section id="candidaturas" class="view">
+                <!-- Titulo -->
                 <h1>Minhas candidaturas</h1>
                 <p class="lead">Acompanhe cada etapa dos processos seletivos.</p>
                 
+                <!-- Card 1 / Candidatura -->
                 <div class="card listcard">
                     <h3>Assistente administrativo</h3>
                     <p>Transportadora Porto Ferreira</p>
@@ -237,6 +268,7 @@
                     <p class="detail">Entrevista online — 24 de outubro, às 14h. Comunicação por escrito confirmada.</p>
                 </div>
 
+                <!-- Card 2 / Candidatura -->
                 <div class="card listcard">
                     <h3>Atendimento ao cliente</h3>
                     <p>Conecta Serviços</p>
@@ -245,20 +277,26 @@
                 </div>
             </section>
 
+            <!-- Seção de vagas salvas -->
             <section id="salvas" class="view">
+                <!-- Titulo -->
                 <h1>Vagas salvas</h1>
                 <p class="lead">Oportunidades para consultar mais tarde.</p>
 
+                <!-- Lista das vagas salvas -->
                 <div class="card listcard">
                     <p>Você ainda não salvou nenhuma vaga neste painel demonstrativo.</p>
                     <button class="primary" data-view="vagas">Buscar vagas</button>
                 </div>
             </section>
 
+            <!-- Seção de preferências -->
             <section id="preferencias" class="view">
+                <!-- Titulo -->
                 <h1>Preferências</h1>
                 <p class="lead">Personalize sua experiência de navegação.</p>
 
+                <!-- Opções de preferências -->
                 <div class="card formcard">
                     <label class="toggle">
                         <input type="checkbox" id="largeText"> Aumentar tamanho do texto
@@ -280,10 +318,13 @@
                 </div>
             </section>
 
+            <!-- Seção de ajuda -->
             <section id="ajuda" class="view">
+                <!-- Titulo -->
                 <h1>Ajuda</h1>
                 <p class="lead">Encontre respostas para dúvidas frequentes.</p>
                 
+                <!-- Dúvidas / Faqs -->
                 <div class="card formcard">
                     <details>
                         <summary>Como acompanho uma candidatura?</summary>
@@ -300,6 +341,7 @@
                 </div>
             </section>
 
+            <!-- Seção de vagas / Header -->
             <section id="vagas" class="view">
                 <h1>Buscar vagas</h1>
                 <p class="lead">Encontre uma oportunidade para você.</p>
@@ -312,6 +354,7 @@
                 </div>
             </section>
             
+            <!-- Seção de mensagens / Header -->
             <section id="mensagens" class="view">
                 <h1>Mensagens</h1>
                 <p class="lead">Suas conversas com empresas.</p>

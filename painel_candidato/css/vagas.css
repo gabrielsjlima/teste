@@ -1,8 +1,0 @@
-#jobResults {
-    margin-top: 20px
-}
-
-#jobResults .job {
-    padding: 15px;
-    border-top: 1px solid var(--line)
-}

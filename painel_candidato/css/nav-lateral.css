@@ -1,3 +1,5 @@
+/* Meu painel */
+
 .hero-grid {
     display: grid;
     grid-template-columns: 1.94fr 1fr;
@@ -144,3 +146,157 @@
 .update .primary {
     margin-left: auto
 }
+
+/* Meu curriculo */
+
+.formcard {
+    max-width: 850px;
+    padding: 25px
+}
+
+.formcard form {
+    display: grid;
+    gap: 17px
+}
+
+.formcard label {
+    display: grid;
+    gap: 7px;
+    font-weight: 600
+}
+
+.formcard input:not([type=checkbox]),
+.formcard textarea {
+    border: 1px solid #d8cbdd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    background: #fff
+}
+
+.formcard .primary {
+    justify-self: start
+}
+
+/* Minhas candidaturas */
+
+.applications {
+    padding: 0 17px
+}
+
+.app-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 9px
+}
+
+.app-row+.app-row {
+    border-top: 1px solid #dedce2
+}
+
+.app-name {
+    min-width: 210px;
+    flex: 1
+}
+
+.app-name h3 {
+    font-size: 18px;
+    margin: 0
+}
+
+.app-name p {
+    font-size: 15px
+}
+
+.pill {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 11px 15px;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.green {
+    background: #dff8e9;
+    color: #12643c
+}
+
+.yellow {
+    background: #fff0d3;
+    color: #674016
+}
+
+.next-step {
+    border-left: 1px solid #d7d4dc;
+    padding-left: 25px;
+    flex: 1.15;
+    font-size: 14px
+}
+
+.next-step small {
+    font-size: 13px
+}
+
+.smallbtn {
+    min-width: 160px;
+    padding: 11px 12px
+}
+
+/* Vagas salvas */
+
+#jobResults {
+    margin-top: 20px
+}
+
+#jobResults .job {
+    padding: 15px;
+    border-top: 1px solid var(--line)
+}
+
+/* Preferências */
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0
+}
+
+.toggle input {
+    accent-color: var(--purple);
+    width: 20px;
+    height: 20px
+}
+
+.large-text {
+    font-size: 115%
+}
+
+.high-contrast {
+    --bg: #fff;
+    --ink: #090909;
+    --deep: #31003e;
+    --muted: #222;
+    --line: #555
+}
+
+/* Ajuda */
+
+details {
+    padding: 15px;
+    border-bottom: 1px solid var(--line)
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600
+}
+
+details p {
+    padding: 12px 0
+}
+
